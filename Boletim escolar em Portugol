@@ -1,0 +1,98 @@
+// BOLETIM ESCOLAR DO ALUNO(A)
+
+
+programa
+{
+    funcao inicio()
+    {
+        cadeia nome
+        cadeia curso
+        cadeia disciplina
+        real nota1
+        real nota2
+        real media
+
+
+        escreva("------------------------------------\n")
+        escreva("         BOLETIM ESCOLAR\n")
+        escreva("------------------------------------\n")
+
+
+        escreva("\nNome: ")
+        leia(nome)
+
+
+        escreva("Curso: ")
+        leia(curso)
+
+
+        escreva("Disciplina: ")
+        leia(disciplina)
+
+
+        escreva("Nota 1: ")
+        leia(nota1)
+
+
+        escreva("Nota 2: ")
+        leia(nota2)
+
+
+        // Calculando a média
+        media = (nota1 + nota2) / 2
+
+
+        escreva("\n------------------------------------\n")
+        escreva("             RESULTADO\n")
+        escreva("\n------------------------------------\n")
+
+
+        escreva("\nAluno: ", nome)
+        escreva("\nCurso: ", curso)
+        escreva("\nDisciplina: ", disciplina)
+        escreva("\nNota 1: ", nota1)
+        escreva("\nNota 2: ", nota2)
+        escreva("\nMédia: ", media)
+
+
+        // Verificando a situação do aluno
+        se (media >= 60)
+        {
+            escreva("\nSituação: APROVADO")
+        }
+        senao se (media >= 20)
+        {
+            escreva("\nSituação: RECUPERAÇÃO")
+        }
+        senao
+        {
+            escreva("\nSituação: REPROVADO")
+        }
+
+
+        // Mensagem de acordo com a média
+        se (media >= 90)
+        {
+            escreva("\nDesempenho: EXCELENTE!")
+        }
+        senao se (media >= 70)
+        {
+            escreva("\nDesempenho: BOM!")
+        }
+        senao se (media >= 60)
+        {
+            escreva("\nDesempenho: SATISFATÓRIO.")
+        }
+        senao se (media >= 20)
+        {
+            escreva("\nDesempenho: PRECISA MELHORAR.")
+        }
+        senao
+        {
+            escreva("\nDesempenho: MUITO BAIXO.")
+        }
+
+
+        escreva("\n------------------------------------\n")
+    }
+}
