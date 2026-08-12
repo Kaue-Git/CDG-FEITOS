@@ -1,0 +1,41 @@
+//Calculadora: soma, subtração, multiplicação e divisão.
+
+#include<stdio.h>
+#include<locale.h>
+char op; 
+int x;
+int y;
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	printf("Informe qual operacao deseja realizar: \n");
+	scanf("%c", &op);
+	
+	printf("Informe o primeiro valor: \n");
+	scanf("%d", &x);
+	
+	printf("Informe o segundo valor: \n");
+	scanf("%d", &y);
+
+	if (op == '*'){
+		int mult = x * y;
+		printf("O resultado e: %d", mult);
+		
+	} else if(op == '+'){
+		int soma = x + y;
+		printf("O resultado e: %d", soma);
+		
+	} else if(op == '-'){
+		int sub = x - y;
+		printf("O resultado e: %d", sub);
+		
+	} else if (op == '/'){
+		int div = x / y;
+		printf("O resultado e: %d", div);
+	
+  } else {
+		printf("Nenhuma operacao selecionada");
+	}
+	
+	return 0;
+}
