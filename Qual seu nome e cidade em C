@@ -1,0 +1,20 @@
+// Qual seu nome e ciadade? em C  
+
+#include<stdio.h>
+#include<locale.h>
+char nome[50];
+char cidade[50];
+int idade;
+
+int main () {
+
+printf("Qual seu nome \n");
+	scanf("%s", &cidade);
+	
+printf("Qual sua cidade \n");
+	scanf("%s", &nome);
+		
+printf("Olá %s, que bom que vc mora em %s", cidade, nome);
+
+	return 0;
+}
