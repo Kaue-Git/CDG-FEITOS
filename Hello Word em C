@@ -1,0 +1,11 @@
+// Hello Word em C
+
+#include<stdio.h>
+
+int main() {
+
+printf("Hello Word");
+
+return 0;
+
+}
