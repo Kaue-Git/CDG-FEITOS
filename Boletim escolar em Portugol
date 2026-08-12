@@ -69,7 +69,6 @@ programa
             escreva("\nSituação: REPROVADO")
         }
 
-
         // Mensagem de acordo com a média
         se (media >= 90)
         {
