@@ -9,14 +9,13 @@ int idade;
 int main () {
 	
 	
-	printf("Qual sua cidade e seu nome \n");
+printf("Qual sua cidade e seu nome \n");
+	scanf("%s", &nome);
 	
-		scanf("%s", &nome);
-	
-	printf("Qual seu nome e cidade \n");
+printf("Qual seu nome e cidade \n");
 		scanf("%s", &cidade);
 		
-	printf("Ola %s que bom que vc mora em %s", cidade, nome);
+printf("Ola %s que bom que vc mora em %s", cidade, nome);
 
-return 0;
+	return 0;
 }
