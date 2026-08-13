@@ -1,0 +1,9 @@
+//HELLO WORD EM PASCAL
+
+program Hello;
+
+begin
+
+  writeln ('Hello, World!')
+
+end.
